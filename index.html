@@ -1,1 +1,70 @@
-hello!!!
+    <!DOCTYPE html> 
+<html> 
+<head> 
+<title>it begins</title> 
+</head> 
+<body> 
+<h2 style="color:yellow"> I have fallen in love with you for</h2> 
+<div id="breath" style="position: relative;left: 350px; top:200px color:white;
+ font-family: italic bold courier;
+ font-size:300%;text-shadow: 5px 5px 5px #FFFFFF;">
+ </div> 
+<div id="message" style ="font-family: italic bold courier; color:red;
+font-size:100%;"> 
+</div> 
+<h1 style="color:black">Nishant you are my LIFE!</h1> 
+
+<style>
+
+    h1{color:seagreen; 
+font-family:courier; 
+font-size:350%; 
+position: relative;left: 320px;top:100px; 
+text-shadow: 5px 5px 5px #7FFFD4;
+}
+
+h2{color:yellow; 
+font-family:courier; 
+font-size:200%; 
+position: relative;left:360px;top:20px; 
+
+}
+
+
+
+
+
+
+    body { background-image: url("http://wallpaperswa.com/thumbnails/detail/20120528/funny%20fingers%20monochrome%201920x1080%20wallpaper_wallpaperswa.com_50.jpg");
+background-repeat: no-repeat;
+background-size: 1500px 800px ;
+}
+</style>
+
+   <iframe width="0" height="0" src="https://www.youtube.com/embed/mfyTBOBEEQg?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen> </iframe> 
+<script> function startTime() {
+
+    var date1 = new Date("7/11/2010"); 
+console.log(date1.getTime()); 
+var date2 = new Date(); 
+var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+ var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+var remDays = Math.ceil(timeDiff % (1000 * 3600 * 24)); 
+var diffHour = Math.ceil(remDays / (1000 * 3600)); 
+var remHour = Math.ceil(remDays % (1000 * 3600)); 
+var diffMin = Math.ceil(remHour / (1000 * 60));
+ var remMin = Math.ceil(remHour % (1000 * 60)); 
+var diffSec = Math.ceil(remMin / 1000); 
+document.getElementById("breath").innerHTML = diffDays+ " Days " + diffHour + " Hours " + diffMin +" Min " + diffSec+" Sec";
+ t = setTimeout(function(){ startTime() },1000 ); } 
+var full_message = "THE DAY WE FIRST MET <br> YOU ARE THE BEST THING HAPPENED IN MY LIFE<br> I FALL IN LOVE WITH YOU EVERYDAY<br> I CAN'T EXPLAIN NISHANT WHAT ARE YOU FOR ME <br> I WILL KEEP LOVING YOU LIKE THIS FOREVER<br> "; 
+var str = "";
+ var count=0,timeout;
+ function print(){ if(count == full_message.length){ clearTimeout(timeout);
+ } else{ str = str +full_message[count]; 
+count++;
+ document.getElementById("message").innerHTML = str; 
+timeout = setTimeout(function(){ print() },300 ); } } print(); startTime(); </script> </body> </html>
+
+
+
